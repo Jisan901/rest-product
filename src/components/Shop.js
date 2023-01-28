@@ -1,5 +1,6 @@
 import Product from './Product';
 import {useState} from 'react';
+import {Link} from "react-router-dom";
 
 function Shop({products,loadProducts}) {
     const [searchQuery,setSearchQuery]=useState('');
@@ -25,7 +26,7 @@ function Shop({products,loadProducts}) {
                         <a href="/"><ion-icon name="person-outline"></ion-icon></a>
                     </div>
                     <div className="item">
-                        <a href="/"><ion-icon name="cart-outline"></ion-icon></a>
+                        <Link to="/cart"><ion-icon name="cart-outline"></ion-icon></Link>
                     </div>
                     <div className="item">
                         <a href="/"><ion-icon name="settings-outline"></ion-icon></a>
